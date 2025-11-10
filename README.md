@@ -213,10 +213,4 @@ results = client.execute_query('SELECT * FROM users LIMIT 10')
 
 ## 作成者
 
-Your Name - [@yourhandle](https://twitter.com/yourhandle)
-
-## 参考リンク
-
-- [AWS Athena ドキュメント](https://docs.aws.amazon.com/athena/)
-- [Boto3 ドキュメント](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
-- [PyMySQL ドキュメント](https://pymysql.readthedocs.io/)
+qiita --- https://qiita.com/sky_camellia
