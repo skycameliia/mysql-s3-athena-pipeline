@@ -1,0 +1,12 @@
+# AWS SDK
+boto3>=1.26.0
+
+# MySQL接続
+pymysql>=1.0.0
+
+# データ処理
+pandas>=2.0.0
+pyarrow>=12.0.0
+
+# 環境変数管理
+# python-dotenv>=1.0.0
