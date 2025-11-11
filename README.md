@@ -29,7 +29,6 @@ mysql-to-s3-athena/
 │   │   ├── s3_client.py          # S3操作用クライアント
 │   │   ├── athena_client.py      # Athena操作用クライアント
 │   │   └── mysql_client.py       # MySQL接続用クライアント
-│   │   └── file_loader.py        # ファイルの読み込みを行うユーティリティ
 │   └── main.py                   # メインエントリーポイント
 ├── sql/
 │   └── queries/
