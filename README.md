@@ -35,8 +35,6 @@ mysql-to-s3-athena/
 ├── sql/
 │   └── queries/
 │       └── example_query.sql     # サンプルクエリ
-├── outputs/
-│   └── query_results/            # クエリ結果の保存先
 └── docs/
     └── architecture.png          # アーキテクチャ図
 ```
