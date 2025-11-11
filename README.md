@@ -138,16 +138,18 @@ python src/main.py --table users --query-file sql/queries/example_query.sql
 `sql/queries/example_query.sql`:
 
 ```sql
-SELECT
-    user_id,
-    user_name,
-    created_at,
-    COUNT(*) as record_count
-FROM your_athena_database.users
-WHERE created_at >= DATE '2024-01-01'
-GROUP BY user_id, user_name, created_at
-ORDER BY record_count DESC
-LIMIT 100;
+SELECT 
+    CASE 
+        WHEN personal_training = 1 THEN 'あり'
+        ELSE 'なし'
+    END as personal_training_status,
+    COUNT(*) as member_count,
+    AVG(visit_per_week) as avg_weekly_visits,
+    AVG(avg_time_in_gym) as avg_gym_time,
+    COUNT(CASE WHEN uses_sauna = 1 THEN 1 END) as sauna_users
+FROM gym_membership
+GROUP BY personal_training
+ORDER BY personal_training DESC;
 ```
 
 ## 主要モジュールの説明
